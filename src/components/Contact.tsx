@@ -1,11 +1,11 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { 
-  EnvelopeIcon, 
-  PhoneIcon, 
-  MapPinIcon, 
-  ClockIcon 
+import {
+  EnvelopeIcon,
+  PhoneIcon,
+  MapPinIcon,
+  ClockIcon
 } from '@heroicons/react/24/outline'
 
 const Contact = () => {
@@ -45,7 +45,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-dark-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.h2 
+        <motion.h2
           className="section-title text-white"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -54,14 +54,14 @@ const Contact = () => {
         >
           İletişim
         </motion.h2>
-        <motion.p 
+        <motion.p
           className="section-subtitle text-dark-200"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          Projeleriniz hakkında konuşmak veya bir iş birliği yapmak isterseniz, 
+          Projeleriniz hakkında konuşmak veya bir iş birliği yapmak isterseniz,
           benimle iletişime geçmekten çekinmeyin. Size en kısa sürede dönüş yapacağım.
         </motion.p>
 
@@ -75,7 +75,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h3 className="text-2xl font-bold mb-6">Bana Ulaşın</h3>
-            
+
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <motion.div
@@ -92,7 +92,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-white">{info.title}</h4>
-                    <a 
+                    <a
                       href={info.link}
                       className="text-dark-300 hover:text-primary-400 transition-colors"
                     >
@@ -149,7 +149,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <h3 className="text-2xl font-bold text-dark-900 mb-6">Mesaj Gönder</h3>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -169,7 +169,7 @@ const Contact = () => {
                   placeholder="Adınız ve soyadınız"
                 />
               </motion.div>
-              
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -263,12 +263,17 @@ const Contact = () => {
           transition={{ duration: 0.6, delay: 0.5 }}
         >
           <h3 className="text-2xl font-bold text-dark-900 mb-4">Harita</h3>
-          <div className="bg-gradient-to-br from-primary-100 to-primary-200 rounded-lg h-64 flex items-center justify-center">
-            <div className="text-center">
-              <div className="text-6xl mb-4">📍</div>
-              <p className="text-dark-600 font-medium">İstanbul, Türkiye</p>
-              <p className="text-dark-500 text-sm mt-2">Konum bilgileri için iletişime geçin</p>
-            </div>
+          <div className="rounded-lg overflow-hidden h-96 shadow-inner">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2725.1454972276492!2d29.061847875513198!3d40.9949720202449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7ee414a3ff5%3A0x2e566ef395311487!2s%C4%B0stanbul%20Medeniyet%20%C3%9Cniversitesi%20G%C3%BCney%20Yerle%C5%9Fke!5e1!3m2!1str!2str!4v1772737057650!5m2!1str!2str"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="İstanbul Medeniyet Üniversitesi Konumu"
+            ></iframe>
           </div>
         </motion.div>
       </div>
