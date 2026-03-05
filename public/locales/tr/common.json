@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Merhaba, Ben Abdulkerim Işık",
+    "subtitle": "Bilgisayar Mühendisliği Öğrencisi | Medeniyet Üniversitesi",
+    "description": "Modern web teknolojileriyle yenilikçi çözümler üreten tutkulu bir geliştirici.",
+    "cta": "İletişime Geç"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "description": "Medeniyet Üniversitesi Bilgisayar Mühendisliği öğrencisi olarak modern web teknolojileri kullanarak yenilikçi çözümler üretmeye tutkulu bir geliştiriciyim.",
+    "education": {
+      "title": "Eğitim",
+      "description": "Medeniyet Üniversitesi Bilgisayar Mühendisliği 2. Sınıf öğrencisiyim. Derslerim kapsamında modern programlama dilleri, veri yapıları, algoritmalar ve web teknolojileri üzerine çalışmalar yapıyorum."
+    },
+    "goals": {
+      "title": "Hedeflerim",
+      "description": "Yazılım dünyasında kendimi sürekli geliştirerek modern teknolojileri etkili bir şekilde kullanmak ve kullanıcı odaklı çözümler üretmek benim önceliğim. Açık kaynak projelere katkıda bulunmak ve toplulukla bilgi paylaşımı yapmak istiyorum."
+    },
+    "stats": {
+      "projects": "50+ Proje",
+      "quality": "%100 Kalite"
+    }
+  },
+  "skills": {
+    "title": "Yetenekler & Teknolojiler",
+    "description": "Modern teknolojilerde uzmanlaşmak ve sürekli öğrenmek benim temel prensibim. İşte kullandığım teknolojiler ve uzmanlık seviyelerim.",
+    "expertise": "Uzmanlık Seviyesi",
+    "hoverText": "{{skill}} ile ilgili projeler ve deneyimlerim hakkında daha fazla bilgi edinmek için iletişim kurabilirsiniz.",
+    "distribution": "Yetenek Dağılımım",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Veri Tabanı",
+      "devops": "DevOps"
+    }
+  },
+  "projects": {
+    "title": "Öne Çıkan Projeler"
+  },
+  "contact": {
+    "title": "İletişime Geç",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "location": "Konum"
+  },
+  "footer": {
+    "copyright": "© {{year}} Abdulkerim Işık. Tüm hakları saklıdır."
+  }
+}

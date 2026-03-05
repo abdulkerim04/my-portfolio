@@ -1,11 +1,15 @@
+'use client'
+
 import { motion } from 'framer-motion'
-import { 
-  EnvelopeIcon, 
-  MapPinIcon, 
-  PhoneIcon 
+import { useTranslation } from 'react-i18next'
+import {
+  EnvelopeIcon,
+  MapPinIcon,
+  PhoneIcon
 } from '@heroicons/react/24/outline'
 
 const Footer = () => {
+  const { t } = useTranslation('common')
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
@@ -16,13 +20,13 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-dark-900 text-white py-16">
+    <footer className="bg-dark-900 dark:bg-dark-950 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          
+
           {/* About */}
           <div className="lg:col-span-2">
-            <motion.h3 
+            <motion.h3
               className="text-2xl font-bold gradient-text mb-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -31,19 +35,19 @@ const Footer = () => {
             >
               Abdulkerim Işık
             </motion.h3>
-            <motion.p 
+            <motion.p
               className="text-dark-300 mb-6 max-w-md"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              Bilgisayar Mühendisliği öğrencisi | Medeniyet Üniversitesi | Yenilikçi çözümler ve modern teknolojilerle çalışmayı seven bir geliştirici.
+              {t('about.description')}
             </motion.p>
-            
+
             {/* Contact Info */}
             <div className="space-y-4">
-              <motion.div 
+              <motion.div
                 className="flex items-center space-x-3 text-dark-300"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -78,18 +82,18 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <motion.h4 
+            <motion.h4
               className="text-lg font-semibold mb-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              Hızlı Bağlantılar
+              Quick Links
             </motion.h4>
             <ul className="space-y-2">
-              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item, index) => (
-                <motion.li 
+              {[t('nav.home'), t('nav.about'), t('nav.skills'), t('nav.projects'), t('nav.contact')].map((item, index) => (
+                <motion.li
                   key={item}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -109,14 +113,14 @@ const Footer = () => {
 
           {/* Social Links */}
           <div>
-            <motion.h4 
+            <motion.h4
               className="text-lg font-semibold mb-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              Sosyal Medya
+              Social Media
             </motion.h4>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -141,14 +145,14 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <motion.div 
+        <motion.div
           className="border-t border-dark-700 mt-12 pt-8 text-center text-dark-400"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p>&copy; {currentYear} Abdulkerim Işık. Tüm hakları saklıdır.</p>
+          <p>{t('footer.copyright', { year: currentYear })}</p>
         </motion.div>
       </div>
     </footer>

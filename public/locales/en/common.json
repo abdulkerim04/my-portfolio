@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Hi, I'm Abdulkerim Işık",
+    "subtitle": "Computer Engineering Student | Medeniyet University",
+    "description": "Passionate developer creating innovative solutions with modern web technologies.",
+    "cta": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a Computer Engineering student at Medeniyet University with a passion for creating innovative solutions using modern web technologies.",
+    "education": {
+      "title": "Education",
+      "description": "I'm a 2nd year Computer Engineering student at Medeniyet University. In my courses, I study modern programming languages, data structures, algorithms, and web technologies."
+    },
+    "goals": {
+      "title": "My Goals",
+      "description": "My priority is to continuously develop myself in the software world, use modern technologies effectively, and produce user-oriented solutions. I want to contribute to open source projects and share knowledge with the community."
+    },
+    "stats": {
+      "projects": "50+ Projects",
+      "quality": "100% Quality"
+    }
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "description": "Specializing in modern technologies and continuous learning is my core principle. Here are the technologies I use and my expertise levels.",
+    "expertise": "Expertise Level",
+    "hoverText": "You can contact me to learn more about my projects and experiences with {{skill}}.",
+    "distribution": "My Skill Distribution",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "devops": "DevOps"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location"
+  },
+  "footer": {
+    "copyright": "© {{year}} Abdulkerim Işık. All rights reserved."
+  }
+}
