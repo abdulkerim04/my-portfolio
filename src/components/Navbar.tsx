@@ -15,11 +15,15 @@ import {
   LanguageIcon
 } from '@heroicons/react/24/outline'
 
-const Navbar = () => {
+interface NavbarProps {
+  isMenuOpen: boolean
+  setIsMenuOpen: (isOpen: boolean) => void
+}
+
+const Navbar = ({ isMenuOpen, setIsMenuOpen }: NavbarProps) => {
   const { t, i18n } = useTranslation('common')
   const { theme, setTheme } = useTheme()
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -68,11 +72,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? 'bg-white/90 dark:bg-dark-900/90 backdrop-blur-md shadow-soft'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
