@@ -8,16 +8,16 @@
   },
   "hero": {
     "title": "Hi, I'm Abdulkerim Işık",
-    "subtitle": "Computer Engineering Student | Medeniyet University",
+    "subtitle": "Computer Engineering Student | Istanbul Medeniyet University",
     "description": "Passionate developer creating innovative solutions with modern web technologies.",
     "cta": "Get In Touch"
   },
   "about": {
     "title": "About Me",
-    "description": "I'm a Computer Engineering student at Medeniyet University with a passion for creating innovative solutions using modern web technologies.",
+    "description": "I'm a Computer Engineering student at Istanbul Medeniyet University with a passion for creating innovative solutions using modern web technologies.",
     "education": {
       "title": "Education",
-      "description": "I'm a 2nd year Computer Engineering student at Medeniyet University. In my courses, I study modern programming languages, data structures, algorithms, and web technologies."
+      "description": "I'm a 2nd year Computer Engineering student at Istanbul Medeniyet University. In my courses, I study modern programming languages, data structures, algorithms, and web technologies."
     },
     "goals": {
       "title": "My Goals",

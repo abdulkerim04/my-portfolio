@@ -4,8 +4,7 @@ import { motion } from 'framer-motion'
 import {
   EnvelopeIcon,
   PhoneIcon,
-  MapPinIcon,
-  ClockIcon
+  MapPinIcon
 } from '@heroicons/react/24/outline'
 
 const Contact = () => {
@@ -19,25 +18,19 @@ const Contact = () => {
     {
       icon: EnvelopeIcon,
       title: 'E-posta',
-      detail: 'abdulkerim@example.com',
-      link: 'mailto:abdulkerim@example.com'
+      detail: 'abdulkerim5704@gmail.com',
+      link: 'mailto:abdulkerim5704@gmail.com'
     },
     {
       icon: PhoneIcon,
       title: 'Telefon',
-      detail: '+90 555 123 45 67',
-      link: 'tel:+905551234567'
+      detail: '+90 543 508 99 57',
+      link: 'tel:+905435089957'
     },
     {
       icon: MapPinIcon,
       title: 'Konum',
       detail: 'İstanbul, Türkiye',
-      link: '#'
-    },
-    {
-      icon: ClockIcon,
-      title: 'Çalışma Saatleri',
-      detail: 'Pazartesi - Cuma: 9:00 - 18:00',
       link: '#'
     }
   ]
